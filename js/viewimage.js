@@ -11,9 +11,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
     largeImage.src = src;
     imageDescription.textContent = description;
-    downloadBtn.addEventListener('click', () => {
-        window.location.href = download;
-    });
+
+    // Перевірка параметра download
+    if (download) {
+        downloadBtn.addEventListener('click', () => {
+            window.location.href = download;
+        });
+    } else {
+        downloadBtn.disabled = true;
+        downloadBtn.textContent = 'Download not available';
+    }
 
     // Load categories
     const categoriesContainer = document.getElementById('categories');

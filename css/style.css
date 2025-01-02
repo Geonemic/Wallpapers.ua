@@ -261,13 +261,13 @@ button:-webkit-details-marker {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #007bff;
+    background-color: #ff4500;
     color: white;
     transition: background-color 0.3s ease;
 }
 
 .download-btn:hover {
-    background-color: #0056b3;
+    background-color: #892907;
 }
 
 .download-btn:disabled {
@@ -305,7 +305,7 @@ button:-webkit-details-marker {
 .image-categories .category {
     padding: 8px 16px; /* Reduced padding */
     font-size: 16px; /* Reduced font size */
-    background-color: #28a745;
+    background-color: #ffa500;
     color: white;
     border-radius: 5px;
 }
